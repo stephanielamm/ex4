@@ -12,14 +12,13 @@
     <div id="app" class="container">
 
       <div class="column is-half is-offset-one-quarter content">
-
         <section>
-          <div class="card">
+          <div class="card" v-for="card in cards">
             <div class="card-header">
-              <p class="card-header-title">Todo Item Title</p>
+              <p class="card-header-title">{{ card.title }}</p>
             </div>
             <div class="card-content">
-              <p>My First Todo Item</p>
+              <p> {{ card.content }}</p>
             </div>
             <footer class="card-footer">
               <a class="card-footer-item">Edit</a>
@@ -27,7 +26,6 @@
             </footer>
           </div>
         </section>
-
         <section>
           <label class="label">New Todo</label>
           <div class="control is-grouped">

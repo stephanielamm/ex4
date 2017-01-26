@@ -5,6 +5,16 @@
 new Vue({
   el: '#app',
   data: {
+    cards: [
+      {
+        title: "Title.",
+        content: "This is the card's content."
+      },
+      {
+        title: "Title.",
+        content: "This is the second card's content."
+      }
+    ]
   },
   methods: {
   }
