@@ -17,5 +17,9 @@ new Vue({
     ]
   },
   methods: {
+    addTask: function ()
+    this.card.push({
+      //////////
+    })
   }
 });
