@@ -22,22 +22,23 @@
             </div>
             <footer class="card-footer">
               <a class="card-footer-item">Edit</a>
-              <a class="card-footer-item">Done</a>
+              <a class="card-footer-item" @click="removeCard(card)">Done</a>
             </footer>
           </div>
         </section>
+
         <section>
           <label class="label">New Todo</label>
           <div class="control is-grouped">
             <div class="control is-expanded">
-              <input type="text" class="input" placeholder="Todo Item Title" />
+              <input type="text" v-model:"titleInputValue" class="input" placeholder="Todo Item Title" />
             </div>
             <div class="control">
               <a class="button is-primary" @:click="addTask">Create</a>
             </div>
           </div>
           <div class="control">
-            <textarea class="textarea" placeholder="Todo item content"></textarea>
+            <textarea type="text" v-model="contentInputValue" class="textarea" placeholder="Todo item content"></textarea>
           </div>
           <div class="control">
             <!-- this should only be visible if we are editing -->

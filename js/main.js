@@ -19,7 +19,11 @@ new Vue({
   methods: {
     addTask: function ()
     this.card.push({
-      //////////
-    })
+      title: this.titleInputValue,
+      content: this.contentInputValue
+    }),
+    removeCard (i) {
+      console.log(i);
+    }
   }
 });
