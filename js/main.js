@@ -21,10 +21,10 @@ new Vue({
   },
   methods: {
     addTask: function (){
-    this.card.push({
+    this.cards.push({
       title: this.titleInputValue,
       content: this.contentInputValue
-    });
+    })
     this.titleInputValue='';
     this.contentInputValue='';
   },
