@@ -34,11 +34,13 @@ new Vue({
     this.contentInputValue='';
   },
     removeCard: function (thisCard) {
-      var cardIndex=this.cards.indexOf(thisCard);
-     this.cards.splice(cardIndex,1);
+    var cardIndex=this.cards.indexOf(thisCard);
+    this.cards.splice(cardIndex,1);
    },
-   editCard: function () {
+   editCard: function (thisCard) {
+     this.editingItem=this.cards.push({
 
+     });
    },
   }
 });
