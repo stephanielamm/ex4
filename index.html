@@ -21,7 +21,7 @@
               <p>{{ card.content }}</p>
             </div>
             <footer class="card-footer">
-              <a class="card-footer-item">Edit</a>
+              <a class="card-footer-item" @click="editCard(card)">Edit</a>
               <a class="card-footer-item" @click="removeCard(card)">Done</a>
             </footer>
           </div>

@@ -35,6 +35,10 @@ new Vue({
     removeCard: function (thisCard) {
       var cardIndex=this.cards.indexOf(thisCard);
      this.cards.splice(cardIndex,1);
-    }
+   },
+   editCard: function () {
+var cardIndex=this.cards.indexOf(thisCard);
+
+   },
   }
 });
