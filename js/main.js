@@ -32,8 +32,9 @@ new Vue({
     this.titleInputValue='';
     this.contentInputValue='';
   },
-    removeCard (i) {
-      console.log(i);
+    removeCard: function (thisCard) {
+      var cardIndex=this.cards.indexOf(thisCard);
+     this.cards.splice(cardIndex,1);
     }
   }
 });
