@@ -18,7 +18,7 @@
               <p class="card-header-title">{{ card.title }}</p>
             </div>
             <div class="card-content">
-              <p> {{ card.content }}</p>
+              <p>{{ card.content }}</p>
             </div>
             <footer class="card-footer">
               <a class="card-footer-item">Edit</a>
@@ -31,14 +31,14 @@
           <label class="label">New Todo</label>
           <div class="control is-grouped">
             <div class="control is-expanded">
-              <input type="text" v-model:"titleInputValue" class="input" placeholder="Todo Item Title" />
+              <input type="text" class="input" placeholder="Todo Item Title" v-model:"titleInputValue" />
             </div>
-            <div class="control">
-              <a class="button is-primary" @:click="addTask">Create</a>
+            <div class="control" @click="addTask()">
+              <a class="button is-primary">Create</a>
             </div>
           </div>
           <div class="control">
-            <textarea type="text" v-model="contentInputValue" class="textarea" placeholder="Todo item content"></textarea>
+            <textarea class="textarea" placeholder="Todo item content" v-model="contentInputValue"></textarea>
           </div>
           <div class="control">
             <!-- this should only be visible if we are editing -->

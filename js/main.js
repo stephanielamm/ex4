@@ -5,6 +5,9 @@
 new Vue({
   el: '#app',
   data: {
+    titleInputValue: '',
+    contentInputValue: '',
+
     cards: [
       {
         title: "Title.",
@@ -17,11 +20,18 @@ new Vue({
     ]
   },
   methods: {
-    addTask: function ()
+    addTask: function (){
     this.card.push({
       title: this.titleInputValue,
       content: this.contentInputValue
-    }),
+    });
+    this.titleInputValue='';
+    this.contentInputValue='';
+  },
+  cancel: function() {
+    this.titleInputValue='';
+    this.contentInputValue='';
+  },
     removeCard (i) {
       console.log(i);
     }
