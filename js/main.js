@@ -7,7 +7,7 @@ new Vue({
   data: {
     titleInputValue: '',
     contentInputValue: '',
-    editingItem: '',
+    editingCards: '',
 
     cards: [
       {
@@ -38,7 +38,7 @@ new Vue({
     this.cards.splice(cardIndex,1);
    },
    editCard: function (thisCard) {
-     this.editingItem=this.cards.push({
+     this.editingCards=this.cards.push({
 
      });
    },

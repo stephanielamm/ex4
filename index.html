@@ -15,9 +15,9 @@
         <section>
           <div class="card" v-for="card in cards">
             <div class="card-header">
-              <p class="card-header-title">{{ card.title }}</p>
+              <p class="card-header-title" v-cloak>{{ card.title }}</p>
             </div>
-            <div class="card-content">
+            <div class="card-content" v-cloak>
               <p>{{ card.content }}</p>
             </div>
             <footer class="card-footer">
