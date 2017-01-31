@@ -15,9 +15,9 @@
         <section>
           <div class="card" v-for="card in cards">
             <div class="card-header">
-              <p class="card-header-title" v-cloak>{{ card.title }}</p>
+              <p class="card-header-title" v-cloak >{{ card.title }}</p>
             </div>
-            <div class="card-content" v-cloak>
+            <div class="card-content" v-cloak >
               <p>{{ card.content }}</p>
             </div>
             <footer class="card-footer">
@@ -28,13 +28,13 @@
         </section>
 
         <section>
-          <label class="label">New Todo</label>
+          <label class="label">{{ editingItem ? 'Edit Todo' : 'New Todo' }}</label>
           <div class="control is-grouped">
             <div class="control is-expanded">
               <input type="text" class="input" placeholder="Todo Item Title" v-model="titleInputValue" />
             </div>
             <div class="control" @click="addTask()">
-              <a class="button is-primary">Create</a>
+              <a class="button is-primary">{{ editingItem ? 'Update' : 'Create' }} </a>
             </div>
           </div>
           <div class="control">
