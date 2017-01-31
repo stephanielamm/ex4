@@ -35,7 +35,8 @@ if (this.editingItem) {
         } else {
           return 'Create Item';
         }
-        },
+        }
+      },
 
   methods: {
     addTask: function (){
