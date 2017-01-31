@@ -42,6 +42,7 @@ new Vue({
     var cardIndex=this.cards.indexOf(thisCard);
     this.cards.splice(cardIndex,1);
    },
+  //
    editCard: function (thisCard) {
      this.editingCards=this.cards.push({
 
